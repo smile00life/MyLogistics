@@ -1,0 +1,398 @@
+body
+{
+}
+
+#pageIntro
+{
+    padding: 0 6px;
+}
+
+.content
+{
+    min-width:1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding:0;
+    overflow:hidden;
+}
+
+.leftbox
+{
+    width: 720px;
+    height:auto;
+    float: left;
+    margin-right: 20px;
+}
+.rightbox
+{
+    width: 237px;
+    float: right;
+}
+.itembox
+{
+    background: url(images/bg_rightBoxes.gif) no-repeat bottom;
+    padding-bottom: 10px;
+}
+
+.rightBoxesTop
+{
+    background: url(images/bg_rightBoxesTop.gif) no-repeat;
+    height: 43px;
+}
+
+.rightBoxesTop h3
+{
+    color: #f2f2f2;
+    font-size: 1.1em;
+    display: block;
+    float: left;
+    width: 400px;
+    margin: 12px 0 0 12px;
+}
+
+.rightContent
+{
+    padding-left: 0px;
+    padding-right: 20px;
+}
+
+ul#sidebarLinks li a
+{
+    display: block;
+    background: url(images/icon_arrow.gif) no-repeat 0px 7px;
+    padding: 8px 0 7px 20px;
+    text-decoration: none;
+    color: #929474;
+}
+ul#sidebarLinks li
+{
+    border-bottom: 1px dotted #c6c9b4;
+    padding-bottom: 1px;
+}
+li
+{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+Inherited from ul#sidebarLinks ul, li
+{
+    list-style: none;
+}
+
+.articlelist_title
+{
+    height: 25px;    
+    width: 300px;
+    font-weight: bold;
+}
+
+.list_title
+{
+    height: 25px;    
+    width: 250px;
+    font-weight: bold;
+}
+.check_list
+{
+	width:50px;
+}
+.list_per
+{
+	width:100px;
+}
+.list_li
+{
+	width:50px;
+}
+.list_cus
+{
+	width:100px;
+}
+.list_name
+{
+	width:100px;
+}
+.list_time
+{
+    width: 200px;
+    text-align:center;
+}
+.list_tt
+{
+	width: 200px;
+}
+.create_time
+{
+    width: 150px;
+   /*  text-align:center; */
+}
+.list_mana
+{
+    width: 100px;
+}
+.order_ss
+{
+	width:100px;
+	height:30px;
+	
+}
+.order_ds
+{
+	width:200px;
+	height:30px; 
+	
+}
+.order_sd
+{
+	width:100px;
+	height:50px;
+	text-align:left;	
+	margin-top:20px;
+}
+
+.order_money
+{
+	width:100px;
+	height:30px;
+	font-size:20px;
+	
+}
+.order_td
+{
+	border-bottom: 1px dotted #c6c9b4;
+	width:200px;
+	
+}
+.order_dd
+{
+	/* border-bottom: 1px dotted #c6c9b4; */    /*dotted虚线*/
+	border-bottom: 1px solid #c6c9b4;        /*solid实线*/
+	width:auto;
+	
+}
+.important
+{
+	color:red;
+	width:20px;
+	
+}
+.order_dds
+{
+	border:none;
+	outline:none;/*去掉点击时边框变亮问题*/
+}
+
+/* 系统管理信息维护start */
+.list_ss
+{
+    height: 25px;    
+    width: 200px;
+    font-weight: bold;
+}
+.list_tt
+{
+    width: 150px;
+}
+.list_mm
+{
+    width: 150px;
+}
+
+.autho
+{
+    width: 100px;
+}
+
+
+.cinfo
+{
+	width:100px;
+	text-align:center;
+}
+.cpass
+{
+	width:100px;
+}
+/* 系统管理信息维护end */
+
+
+.contentBox
+{
+    width: 708px;
+    background: url(images/bg_contentBox.gif) no-repeat bottom;
+    margin: 20px 0;
+}
+.contentBox .contextBoxLeft
+{
+	float:left;
+	margin:15px 10px;
+	font-size:16px;
+	font-family: "微软雅黑";
+}
+.contentBox .contextBoxRight
+{
+	float:right;
+	width:160px;
+	height:30px;
+	margin:10px 10px; 
+	
+}
+.contentBox .contextBoxInput
+{
+	background:url(images/sousou.png) no-repeat 1px;
+	background-color: #FFFFFF;
+    text-indent:2.5em;
+    float:left;
+    width:120px;
+    
+}
+.contentBox .contextBoxsubmit
+{
+	float:right;
+} 
+.sousuo_la
+{
+	width:120px;
+	/* height:100px; */
+	position: absolute;
+    top:52px;
+    left:538px;
+    background-color:white;
+    border:1px solid red;
+}
+
+.contentBoxTop
+{
+    background: url(images/bg_contentBoxTop.jpg) no-repeat;
+    height: 43px;
+}
+
+.contentBox h3
+{
+    color: #f2f2f2;
+    font-size: 1.1em;
+    display: block;
+    float: left;
+    width: 400px;
+    margin: 12px 0 0 12px;
+}
+td
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.innerContent
+{
+    padding: 12px;
+}
+.innertop
+{
+	height:250px
+}
+table.sTable {
+width: 701px;
+height:auto;
+margin: 0 0 0 -10px;
+border-collapse: collapse;
+float:left;
+}
+table.sTable tr
+{
+	height:40px;
+}
+table.sTable td
+{
+    border-top: 1px solid #dfdfdf;
+    font-size: 0.9em;
+    margin: 0;
+    padding: 5px 0;
+    color: #999;
+}
+
+table.sTable a
+{
+    text-decoration: none;
+    color: #929474;
+    }
+    
+table.sTable a:hover
+{text-decoration: none;
+    color: #000000;
+    }
+td.editItem
+{
+    width: 120px;
+}
+
+td.editpd
+{
+    width:180px;
+    }
+
+
+td.editItem ul li
+{
+    float: left;
+    margin-right: 13px;
+    padding-left: 18px;
+    text-align: center;
+}
+.sinfo
+ {
+    text-align：center;
+    
+ }
+.editlist
+{
+    margin: 0;
+    padding: 0;
+}
+li
+{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.oddRow
+{
+    background: url(images/bg_tableRow.gif) repeat-x 0px 1px;
+}
+
+li.iconEdit
+{
+    background: url(images/icon_edit.gif) no-repeat;
+}
+
+li.iconDel
+{
+    background: url(images/icon_delete.gif) no-repeat 2px 3px;
+}
+
+#Announce_Title
+{
+    width:600px;
+    }
+#Article_Title
+{
+    width:600px;
+    }
+    
+#pd_Title
+{
+    width:400px;
+    }
+#pdc_Title
+{
+    width:250px;
+}
+
+
+
+
+
+
+
+
+

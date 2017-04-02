@@ -1,0 +1,171 @@
+body
+{
+	margin: 0;
+}
+.container
+{
+	margin: 0;
+}
+
+.container
+{
+	background: url(../images/login/login.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;/*设置背景图像是随对象滚动内容固定*/
+	height:auto !important;
+    height:643px;
+    min-height:643px;
+    position: relative;
+} 
+
+.login
+{
+	background-color: rgba(13, 13, 13, 0.25);
+	width: 600px;
+	height: 500px;
+	position: absolute;
+	top: 50px;
+	left: 350px;
+	color: white;
+}
+.login .login_hh
+{
+	width: 600px;
+	height:50px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	color: white;
+}
+.login_left
+{
+	float: left;
+	height: 400px;
+	width: 300px;
+	/*margin-top: 70px;*/
+	position: absolute;
+	left: 0px;
+	top: 70px;
+}
+.login_left a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.login_left a:hover
+{
+	color:#008BF6;
+	text-decoration:blink;
+}
+
+.login_left ul
+{
+	list-style-type: none;
+}
+.login_left ul li
+{
+	padding-top: 10px;
+}
+.username
+{
+	background-color: #faffbd;
+	height: 38px;
+	width: 250px;
+	border: 0;
+	border-radius: 5px;/*圆角*/
+	letter-spacing: 5px;
+	text-align: center;
+	/*text-indent: 2em;*/
+}
+.yan
+{
+	background-color: #faffbd;
+	height: 38px;
+	width: 100px;
+	border: 0;
+	border-radius: 5px;/*圆角*/
+	letter-spacing: 5px;
+	text-align: center;
+	/*text-indent: 2em;*/
+}
+.input_username
+{
+	background-color: #faffbd;
+	height: 28px;
+	width: 200px;
+	border: 0;
+	float: right;
+	margin-top: 5px;
+	margin-right: 17px;
+	/*border-radius: 5px;*/   /*圆角*/
+	/*letter-spacing: 5px;*/
+	/*text-indent: 2em;*/
+	outline:none;  /*去掉边框变亮*/
+}
+
+.input_yan
+{
+	background-color: #faffbd;
+	height: 30px;
+	width: 50px;
+	border: 0;
+	float: right;
+	margin-top: 5px;
+	margin-right: 17px;
+	outline:none;  /*去掉边框变亮*/
+	/*border-radius: 3px;*//*圆角*/
+	/*letter-spacing: 3px;*/
+	/*text-indent: 1em;*/
+}
+.submit
+{
+	width: 250px;
+	height: 30px;
+	background-color: #f0ad4e;
+	font-family: "agency fb";
+	font-size: 20px;
+	color: white;
+	border: 0;
+	border-radius: 5px;/*圆角*/
+	letter-spacing: 5px;
+	cursor: pointer;
+	
+}
+.login_right
+{
+	float: right;
+	height: 380px;
+	width: 300px;
+	/*margin-top: 70px;*/
+	position: absolute;
+	left: 300px;
+	top: 70px;
+}
+.announce
+{
+	margin-top: 10px;
+	text-align: center;
+	color:#FFFFFF;
+	font-size: 20px;
+}
+.login_right ul
+{
+	list-style-type: none;
+	-webkit-padding-start: 20px; /*起始位置*/
+}
+.login_right ul li
+{
+	margin-top: 10px;
+}
+.login_right a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+	cursor: pointer;
+}
+.login_right a:hover
+{
+	color:#008BF6;
+	text-decoration:underline;
+}

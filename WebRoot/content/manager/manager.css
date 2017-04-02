@@ -1,0 +1,307 @@
+/*body*/
+body
+{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    min-width:1000px;   
+}
+
+.mainbody
+{
+    border: none;
+    height:auto;    
+    position: relative;
+    text-align: left;
+    min-width:1000px;
+    width:100%;         
+}
+
+.header
+{
+    font-size: 12px;
+    color: #ffffff;
+    border: none;
+    height: 111px;
+    left: 0px;
+    line-height: 111px;
+    padding: 0px;
+    top: 0px;
+    min-width:1000px;
+    width: 100%;
+    background-image: url(images/manager_header_bg.jpg);
+}
+
+.header a
+{
+    color: #ffffff;
+    text-decoration: none;
+    }
+    
+    .header:hover a
+{
+    color: #ffffff;
+    text-decoration: none;
+    }
+.header_log
+{
+	margin:auto;
+	width:1000px
+	
+}
+.header_logos
+{
+    float: left;
+    padding-left: 150px;
+    margin-left:-25px;
+    height: 111px;
+    width: 229px;
+    background-image: url(images/manager_logo.png);
+    background-repeat: no-repeat;
+    /* background-position: right; */
+}
+
+.header_logInfo
+{
+    float: right;
+    padding-right: 100px;
+}
+
+
+.manager_nav_bg
+{
+    border: none;
+    height: 89px;
+    left: 0px;
+    line-height: 89px;
+    padding: 0px;
+    top: 111px;
+    min-width:1000px;
+    width: 100%;
+    background-image: url(images/manager_nav_bg.png);
+}
+
+.manager_nav
+{
+    padding-left: 120px;
+    
+}
+
+ul#menu
+{
+    position: relative;
+    margin: 0; /*控制文字高度padding-top:-10px;*/
+    line-height: 55px;
+}
+
+ul#menu li
+{
+    display: inline; /*li显示同一行*/
+    list-style: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+ul#menu li a
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #5f5845; /* 导航默认字体颜色*/
+}
+
+ul#menu li a:hover /* 鼠标路过的样式*/
+{
+    /* 鼠标路过的样式background-image: url(images/manager_nav_hover.png);*/
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    color: #5f5845;
+}
+
+ul#menu li a:active
+{
+    text-decoration: none;
+}
+
+.manager_main
+{
+    border: none;
+    font-size: 12px;
+    min-height:300px;
+    height:100%;
+    /* left: 0px;
+    padding: 0px;
+    margin: 0 auto;
+    min-width:1000px; */
+    position:absolute;
+    top:200px;
+    left:180px;
+    width: 1000px;
+    background-image:url(images/content_bg.jpg) no-repeat left;
+}
+.manager_main .title
+{
+	font-size:20px;
+	font-family:'微软雅黑'
+	text-align: center;
+}
+
+.manager_main .nei
+{
+	font-size:13px;
+	font-family:'微软雅黑'
+	text-align: center;
+	margin-top:20px;
+	width:960px;
+	height:300px;
+}
+.manager_main .author
+{
+	
+	font-size:13px;
+	font-family:'微软雅黑'
+	text-align: right;
+	margin-top: 20px;
+	width:960px;
+}
+.manager_main a
+{
+    text-decoration: none;
+}
+
+#wraper
+{
+    height:100%
+}
+.manager_add
+{
+	height:10px;
+}
+.manager_footer_dd
+{
+	 margin:auto;
+	 width:1000px;
+	 height:auto;
+}
+.manager_footer
+{
+    background-image: url(images/manager_footer_bg.png);
+    height: 133px;
+    min-width:1000px;
+    width: 100%;
+    font-size: 12px;
+    color: #ffffff;
+    border: none;
+    /* margin:0 auto;
+    position:relative; */
+    position:absolute;
+    top:650px;
+    left:0px;
+}
+.manager_footer_left
+{
+    padding-top: 50px;
+    float: left;
+   /*  padding-left: 200px; */
+}
+.manager_footer_left .left_image
+{
+	margin:0 auto;
+}
+.left_image ul
+{
+	list-style-type: none;
+}
+.left_image ul li
+{
+	float:left;
+	margin:0 10px;
+}
+
+.left_image a:hover
+{
+	cursor: pointer;/*小手*/
+}
+.manager_footer .icon1
+{
+	position:absolute;
+	top:-30px;
+	left:280px;
+	width:67px;
+	height:67px;
+	background-image: url(image/floot1.png);
+}
+.manager_footer .icon2
+{
+	position:absolute;
+	top:-30px;
+	right:350px;
+	width:67px;
+	height:67px;
+	background-image: url(image/floot2.png);
+	
+}
+.manager_footer_right
+{
+    padding-top: 50px;
+    float: right;
+}
+.manager_footer_right ul
+{
+	list-style-type: none;
+	
+}
+.manager_footer_right ul li
+{
+	float:left;
+	margin:0 20px;
+}
+.manager_footer_right a
+{
+	text-decoration:none;
+	color:#FFFFFF;
+}
+.manager_footer_right a:hover
+{
+	text-decoration: underline;
+	color:blue;
+	cursor: pointer;/*小手*/
+}
+.errorBox, .successBox {
+		padding-bottom:10px; width:708px; margin:10px 0; font-size:0.8em;
+		}
+.successBox 
+{
+    background:url(images/bg_successBox.gif) no-repeat bottom;
+}
+.successBoxTop 
+{
+	background:url(images/bg_successBoxTop.gif) no-repeat; height:6px;
+}
+.successIcon 
+{
+	background:url(images/icon_success.gif) no-repeat 10px 10px;
+}
+
+.line{clear:both;height:10px;line-height:0;font-size:0;background:url(images/dot.gif) repeat-x center}
+
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.1.xsd      
+	    http://www.springframework.org/schema/aop 
+	    http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/mvc 
+        http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
+      <!-- 上面出现的配置信息，必须成对出现，并且放到一起，不能分开 -->
+      <!--  spring-context可以自动检测定义在类路径下的组件并自动注册 -->
+
+	<!-- 配置Controller -->
+	<!-- 读取类包信息 -->
+	<!-- 自动扫描该包，使SpringMVC认为包下用了@controller注解的类是控制器 -->
+	<!-- scan the package and the sub package -->
+	<context:component-scan base-package="com.logistics.controller">
+		<!-- 排除对下面service包的注解 -->
+		<!-- <context:exclude-filter type="annotation"
+			expression="org.springframework.stereotype.Service" /> -->
+	 </context:component-scan>
+	
+	  <!-- 扫描包 -->
+	<context:component-scan base-package="com.logistics.webservice" />
+    
+    <!-- 扫描Aop包 -->
+    <context:component-scan base-package="com.logistics.annotation" />
+    
+	<!-- 切面 启动对@AspectJ注解的支持 -->
+	<aop:aspectj-autoproxy proxy-target-class="true"/>
+	
+	
+
+	<!-- don't handle the static resource -->
+	<mvc:default-servlet-handler />
+
+    <!-- 注册路径驱动器 -->
+	<!-- if you use annotation you must configure following setting -->
+	 <!--  <mvc:annotation-driven />   -->
+	
+	 
+    <mvc:annotation-driven>
+		<mvc:message-converters register-defaults="true">
+		    <!-- 启动Spring MVC的注解功能，完成请求和注解POJO的映射 注解请求映射
+		    默认是ISO-88859-1，避免乱码这里设置为UTF-8 -->
+			<bean class="org.springframework.http.converter.StringHttpMessageConverter">
+				<property name="supportedMediaTypes" value="text/html;charset=UTF-8" />
+			</bean>
+			<!-- 启动JSON格式的配置,自动将格式转换成JSON格式，不需要其他类 -->
+			<bean id="jacksonMessageConverter" class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+				<property name="supportedMediaTypes" value="application/json;charset=UTF-8" />
+			</bean>
+		</mvc:message-converters>
+	</mvc:annotation-driven>
+
+	<!-- 配置mvc的拦截器 可以配置多个 -->
+	<mvc:interceptors> 
+	   <mvc:interceptor>
+	      <!-- 需要被拦截的路径  -->
+	     <mvc:mapping path="/admin/**"/>
+	     <mvc:mapping path="/customer/**"/> 
+	     <mvc:mapping path="/shared/**"/> 
+	     <mvc:mapping path="/announce/**"/> 
+	     <mvc:mapping path="/system/**"/> 
+	     <mvc:mapping path="/department/**"/>
+	     <mvc:mapping path="/cost/**"/>
+	     <mvc:mapping path="/customer/**"/>
+	     <mvc:mapping path="/order/**"/>
+	     <mvc:mapping path="/transport/**"/>
+	     <mvc:mapping path="/contract/**"/>
+		 <!-- 拦截处理的interceptor类  -->
+		 <bean class="com.logistics.interceptor.MemberInterceptor"/> 
+		</mvc:interceptor> 
+	</mvc:interceptors> 
+
+	<!-- 配置视图解析器 -->
+	<!-- configure the InternalResourceViewResolver -->
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+		id="internalResourceViewResolver">
+		<!-- 前缀 -->
+		<property name="prefix" value="/View/"></property>
+		<!-- 后缀 -->
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+</beans>
